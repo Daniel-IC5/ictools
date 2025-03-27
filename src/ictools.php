@@ -56,6 +56,7 @@ file_put_contents( $metadataPath.'/constants.php', $constants );
 if( file_exists( __DIR__.'/ipsInternalConstants.php' ) )
 {
 	$newConstants = '';
+	$additionalConstants = [];
 	require_once __DIR__.'/ipsInternalConstants.php';
 	foreach( $additionalConstants as $c => $v )
 	{
