@@ -184,6 +184,7 @@ $l .= ");
  	expectedArguments(\IPS\Application::extensions(), 0, argumentsSet('applications'));
  	expectedArguments(\IPS\\Email::buildFromTemplate() , 0, argumentsSet('applications'));
  	expectedArguments(\IPS\Application::allExtensions(), 0, argumentsSet('applications'));
+   	expectedArguments(\IPS\Application::appIsEnabled(), 0, argumentsSet('applications'));
  
 }";
 file_put_contents( $metadataPath.'/applications.php', $l );
